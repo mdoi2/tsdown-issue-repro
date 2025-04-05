@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 
-export default defineConfig([
+const config: ReturnType<typeof defineConfig> = defineConfig([
   stylistic.configs.customize({
     semi: true,
   }),
@@ -20,3 +20,5 @@ export default defineConfig([
     ignores: ['node_modules', 'dist'],
   },
 ]);
+
+export default config;

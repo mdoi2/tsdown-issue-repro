@@ -5,6 +5,8 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "isolatedModules": true,
+    "isolatedDeclarations": true,
+    "declaration": true,
     "moduleDetection": "force",
     "noEmit": true,
     /* Linting */
